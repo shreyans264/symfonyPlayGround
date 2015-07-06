@@ -1,1 +1,4 @@
-# symfonyPlayGround
+symfonyPlayGround
+====
+
+A Symfony project.
