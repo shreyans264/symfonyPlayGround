@@ -1,3 +1,23 @@
-app:
-    resource: "@AppBundle/Controller/"
+persons:
+    resource: PersonBundle\Controller\PersonsController
+    type:     rest
+
+persons_constrained:
+    resource: PersonBundle\Controller\PersonsController
     type:     annotation
+    defaults: {_format: json}
+    requirements:
+        appointmentId: \d+
+        _format: json|html|pdf
+
+babas:
+    resource: PersonBundle\Controller\BabasController
+    type:     rest
+
+babas_constrained:
+    resource: PersonBundle\Controller\BabasController
+    type:     annotation
+    defaults: {_format: json}
+    requirements:
+        appointmentId: \d+
+        _format: json|html|pdf

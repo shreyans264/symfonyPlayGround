@@ -1,0 +1,5 @@
+services:
+  person.persons_manager:
+    class: PersonBundle\Manager\PersonsManager
+    arguments:
+      - @doctrine

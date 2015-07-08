@@ -19,7 +19,13 @@
         "symfony/monolog-bundle": "~2.4",
         "sensio/distribution-bundle": "~4.0",
         "sensio/framework-extra-bundle": "~3.0,>=3.0.2",
-        "incenteev/composer-parameter-handler": "~2.0"
+        "doctrine/migrations": "~1.0@dev",
+        "doctrine/doctrine-migrations-bundle": "~1.0",
+        "incenteev/composer-parameter-handler": "~2.0",
+        "friendsofsymfony/rest-bundle": "0.12.*",
+        "jms/serializer": "0.12.*",
+        "jms/serializer-bundle": "0.12.*"
+
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3"

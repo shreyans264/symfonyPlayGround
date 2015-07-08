@@ -71,6 +71,25 @@ doctrine:
         naming_strategy: doctrine.orm.naming_strategy.underscore
         auto_mapping: true
 
+sensio_framework_extra:
+    view:
+        annotations: false
+
+fos_rest:
+    view:
+        view_response_listener: force
+        formats:
+            json: true
+            html: false
+            xml: false
+            pdf: true
+    format_listener:
+        default_priorities: ['json', 'pdf', 'html']
+        fallback_format: json
+        prefer_extension: true
+    routing_loader:
+        default_format: json
+
 # Swiftmailer Configuration
 swiftmailer:
     transport: "%mailer_transport%"
